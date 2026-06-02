@@ -19,7 +19,7 @@ const categories = [
 const galleryImages = [
   {
     id: 1,
-    src: "/placeholder-gallery-1.jpg",
+    src: "/blowing.jpeg",
     alt: "Desktop maintenance",
     category: "Maintenance",
     title: "Desktop Cleaning",
@@ -33,7 +33,7 @@ const galleryImages = [
   },
   {
     id: 3,
-    src: "/placeholder-gallery-3.jpg",
+    src: "/laptop testing.jpeg",
     alt: "Laptop repair",
     category: "Laptop Support",
     title: "Laptop Troubleshooting",
@@ -61,14 +61,14 @@ const galleryImages = [
   },
   {
     id: 7,
-    src: "/desktop preventive maintenance.jpeg",
+    src: "/desktop preventive maintenance2.jpeg",
     alt: "Server room",
     category: "Networking",
     title: "Server Room Work",
   },
   {
     id: 8,
-    src: "/placeholder-gallery-8.jpg",
+    src: "/cable testing.jpeg",
     alt: "Cable testing",
     category: "Cable Management",
     title: "Cable Testing",
@@ -82,7 +82,7 @@ const galleryImages = [
   },
   {
     id: 10,
-    src: "/placeholder-gallery-10.jpg",
+    src: "/3cx.jpeg",
     alt: "VoIP configuration",
     category: "3CX Support",
     title: "VoIP Configuration",

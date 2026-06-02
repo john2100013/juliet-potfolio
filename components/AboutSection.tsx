@@ -23,10 +23,10 @@ const skills = [
 ];
 
 const stats = [
-  { icon: FiMonitor, value: 50, suffix: "+", label: "Devices Serviced" },
-  { icon: FiWifi, value: 30, suffix: "+", label: "Network Issues Solved" },
+  { icon: FiMonitor, value: 250, suffix: "+", label: "Devices Serviced" },
+  { icon: FiWifi, value: 25, suffix: "+", label: "Network Issues Solved" },
   { icon: FiTool, value: 40, suffix: "+", label: "Maintenance Tasks" },
-  { icon: FiUsers, value: 5, suffix: "", label: "Companies Visited" },
+  { icon: FiUsers, value: 30, suffix: "", label: "Companies Visited" },
 ];
 
 function AnimatedCounter({

@@ -219,7 +219,7 @@ export default function HeroSection() {
                 className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl shadow-primary/20"
               >
                 <Image
-                  src="/placeholder-profile.jpg"
+                  src="/hero image 2.jpeg"
                   alt="Profile Picture"
                   fill
                   className="object-cover"

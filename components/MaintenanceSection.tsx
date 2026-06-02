@@ -41,7 +41,7 @@ const activities = [
   {
     id: 2,
     title: "Laptop Troubleshooting at SAI OFFICE",
-    image: "/desktop preventive maintenance.jpeg",
+    image: "/desktop preventive maintenance2.jpeg",
     description:
       "Provided technical support for an employee laptop experiencing network connectivity issues at SAI OFFICE.",
     details: [

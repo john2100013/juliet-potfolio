@@ -46,19 +46,19 @@ const activities = [
   },
   {
     id: 3,
-    title: "Structured Cable Management",
-    image: "/cable.jpeg",
-    icon: FiBox,
-    problem: "Exposed cables creating safety hazards",
-    solution:
-      "Performed structured cable management to improve workplace safety and infrastructure organization.",
-    actions: [
-      "Organized exposed cables into protective tubing",
-      "Reduced cable clutter",
-      "Prevented accidental cable damage",
-      "Improved office safety standards",
-      "Enhanced overall network organization",
-      "Maintained cleaner workstation environments",
+  title: "Biometric Setup and Installation",
+  image: "/cable.jpeg",
+  icon: FiBox,
+  problem: "Manual authentication creating security vulnerabilities",
+  solution:
+    "Implemented biometric systems to enhance security and streamline access control.",
+  actions: [
+    "Installed biometric scanners at entry points",
+    "Configured fingerprint recognition systems",
+    "Reduced unauthorized access attempts",
+    "Improved security compliance standards",
+    "Enhanced user authentication efficiency",
+    "Maintained secure facility access protocols",
     ],
   },
 ];
