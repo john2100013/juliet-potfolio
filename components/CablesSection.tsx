@@ -32,7 +32,7 @@ const activities = [
   {
     id: 2,
     title: "Cable Coiling Issue Resolution",
-    image: "/placeholder-cable-coil.jpg",
+    image: "/cable testing.jpeg",
     icon: FiLink2,
     problem: "Excessive cable coiling affecting signal stability",
     solution:

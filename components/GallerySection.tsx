@@ -26,7 +26,7 @@ const galleryImages = [
   },
   {
     id: 2,
-    src: "/placeholder-gallery-2.jpg",
+    src: "/net22.jpeg",
     alt: "Network troubleshooting",
     category: "Networking",
     title: "Network Diagnostics",
@@ -40,14 +40,14 @@ const galleryImages = [
   },
   {
     id: 4,
-    src: "/placeholder-gallery-4.jpg",
+    src: "/3cx.jpeg",
     alt: "3CX phone setup",
     category: "3CX Support",
     title: "3CX Phone Repair",
   },
   {
     id: 5,
-    src: "/placeholder-gallery-5.jpg",
+    src: "/cable 22.jpeg",
     alt: "Cable organization",
     category: "Cable Management",
     title: "Cable Organization",
