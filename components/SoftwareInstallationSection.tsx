@@ -36,7 +36,7 @@ export default function SoftwareInstallationSection() {
                 <div className="marquee__group">
                   {images.map((src, i) => (
                     <div key={`a-${i}`} className="marquee__item">
-                      <div className="relative w-64 h-44 rounded-lg overflow-hidden bg-card border border-border">
+                      <div className="relative w-72 h-56 sm:w-80 sm:h-64 lg:w-96 lg:h-72 rounded-2xl overflow-hidden bg-card border border-border">
                         <Image src={src} alt={`SAP install ${i + 1}`} fill className="object-cover" />
                       </div>
                     </div>
@@ -46,7 +46,7 @@ export default function SoftwareInstallationSection() {
                 <div className="marquee__group" aria-hidden>
                   {images.map((src, i) => (
                     <div key={`b-${i}`} className="marquee__item">
-                      <div className="relative w-64 h-44 rounded-lg overflow-hidden bg-card border border-border">
+                      <div className="relative w-72 h-56 sm:w-80 sm:h-64 lg:w-96 lg:h-72 rounded-2xl overflow-hidden bg-card border border-border">
                         <Image src={src} alt={`SAP install duplicate ${i + 1}`} fill className="object-cover" />
                       </div>
                     </div>
