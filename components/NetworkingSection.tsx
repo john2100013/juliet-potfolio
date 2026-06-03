@@ -259,6 +259,100 @@ export default function NetworkingSection() {
             </div>
           </motion.div>
         </div>
+
+        {/* Mobile App Development & Deployment */}
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mt-12">
+          {/* Image */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={isInView ? { opacity: 1, x: 0 } : {}}
+            transition={{ delay: 0.5, duration: 0.6 }}
+            className="relative"
+          >
+            <div className="relative rounded-2xl overflow-hidden border border-border shadow-2xl group">
+              <Image
+                src="/app1.PNG"
+                alt="Mobile App Deployment"
+                width={400}
+                height={700}
+                className="object-contain bg-card/5 w-full h-96 sm:h-[520px] lg:h-[680px] transition-all duration-500"
+              />
+
+              <div className="absolute inset-0 pointer-events-none">
+                <motion.div
+                  animate={{ y: [0, -8, 0] }}
+                  transition={{ duration: 2, repeat: Infinity }}
+                  className="absolute top-6 left-6 p-3 bg-card/90 backdrop-blur-sm rounded-lg border border-border shadow-lg"
+                >
+                  <FiActivity className="w-6 h-6 text-primary" />
+                </motion.div>
+                <motion.div
+                  animate={{ x: [0, 8, 0] }}
+                  transition={{ duration: 2, repeat: Infinity, delay: 0.5 }}
+                  className="absolute bottom-6 right-6 p-3 bg-card/90 backdrop-blur-sm rounded-lg border border-border shadow-lg"
+                >
+                  <FiRefreshCw className="w-6 h-6 text-primary" />
+                </motion.div>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Content */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={isInView ? { opacity: 1, x: 0 } : {}}
+            transition={{ delay: 0.6, duration: 0.6 }}
+          >
+            <div className="bg-card rounded-2xl p-6 sm:p-8 border border-border shadow-xl">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="p-3 rounded-xl bg-primary/10">
+                  <FiActivity className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-xl font-semibold text-foreground">
+                  Mobile App Development & Deployment
+                </h3>
+              </div>
+
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Participated in the creation and deployment of a mobile ERP application. Contributions included backend API integration, end-to-end testing, CI/CD pipeline configuration, feature implementation support, and assisting with deployment rollouts and monitoring.
+              </p>
+
+              {/* Key Activities */}
+              <h4 className="font-semibold text-foreground mb-4">Key Contributions:</h4>
+              <ul className="space-y-3 mb-6">
+                {[
+                  "Assisted with backend API integration for mobile features",
+                  "Performed end-to-end and integration testing",
+                  "Helped configure CI/CD pipelines for app releases",
+                  "Supported deployment rollouts and basic monitoring",
+                  "Collaborated on UI/UX feedback and bug fixes",
+                ].map((detail, index) => (
+                  <motion.li
+                    key={index}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={isInView ? { opacity: 1, x: 0 } : {}}
+                    transition={{ delay: 0.8 + index * 0.05 }}
+                    whileHover={{ x: 5 }}
+                    className="flex items-start gap-3 text-foreground"
+                  >
+                    <FiCheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span>{detail}</span>
+                  </motion.li>
+                ))}
+              </ul>
+
+              <div className="bg-primary/5 rounded-xl p-4 border border-primary/20">
+                <div className="flex items-center gap-2 text-primary mb-2">
+                  <FiActivity className="w-5 h-5" />
+                  <span className="font-semibold">Skills Gained</span>
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  Mobile app integration, CI/CD for mobile releases, testing strategies, and deployment monitoring.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
       </div>
     </section>
   );
