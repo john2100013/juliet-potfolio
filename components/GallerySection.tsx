@@ -335,6 +335,8 @@ export default function GallerySection() {
             ))}
           </AnimatePresence>
         </motion.div>
+
+        
       </div>
 
       {/* Lightbox */}

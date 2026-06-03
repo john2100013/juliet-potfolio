@@ -7,6 +7,7 @@ import NetworkingSection from "@/components/NetworkingSection";
 import CablesSection from "@/components/CablesSection";
 import TimelineSection from "@/components/TimelineSection";
 import GallerySection from "@/components/GallerySection";
+import SaiOfficeCard from "@/components/SaiOfficeCard";
 import Footer from "@/components/Footer";
 import ScrollProgress from "@/components/ScrollProgress";
 
@@ -23,6 +24,7 @@ export default function Home() {
       <CablesSection />
       <TimelineSection />
       <GallerySection />
+      <SaiOfficeCard />
       <Footer />
     </main>
   );
