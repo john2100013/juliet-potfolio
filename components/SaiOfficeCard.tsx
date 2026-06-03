@@ -20,7 +20,7 @@ export default function SaiOfficeCard() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-4 p-6">
           <div className="w-full md:w-1/3 h-44 md:h-40 relative rounded-lg overflow-hidden shadow-inner">
             <Image
-              src="/sai-office.png"
+              src="/Blue Modern Business Webinar Poster.png"
               alt="SAI Office - Ramco Group"
               fill
               className="object-cover"
@@ -30,7 +30,7 @@ export default function SaiOfficeCard() {
           <div className="w-full md:w-2/3">
             <h4 className="text-lg font-semibold text-foreground mb-1">SAI Office</h4>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              its part of re a member of Ramco Group, Sai Office comprises of 5 companies (Office Technologies Ltd, Officemart Ltd, Lino Stationers, and Sai) which mainly focus on IT Accessories, Stationeries, Office Automations, Air Conditioners, Office Furnitures and Leasing of Printers and Photocopiers.
+              I participated in creating a poster to invite all staff to an Easyflow training. The training taught SAI Office staff and employees from other Ramco Group companies how to use the new application for setting KPIs.
             </p>
           </div>
         </div>
