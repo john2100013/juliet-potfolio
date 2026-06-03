@@ -314,18 +314,19 @@ export default function NetworkingSection() {
               </div>
 
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Participated in the creation and deployment of a mobile ERP application. Contributions included backend API integration, end-to-end testing, CI/CD pipeline configuration, feature implementation support, and assisting with deployment rollouts and monitoring.
+                I participated in creating a mobile application and ERP intended for use by Ramco Group and external companies. The software team followed Agile methodology. For system design we used diagramming with Lucidchart, architecture modeling with Enterprise Architect, and database design with dbdiagram.io. Collaboration and planning were handled through Jira. The app was built using the cross-platform framework React Native.
               </p>
 
               {/* Key Activities */}
               <h4 className="font-semibold text-foreground mb-4">Key Contributions:</h4>
               <ul className="space-y-3 mb-6">
                 {[
-                  "Assisted with backend API integration for mobile features",
-                  "Performed end-to-end and integration testing",
-                  "Helped configure CI/CD pipelines for app releases",
-                  "Supported deployment rollouts and basic monitoring",
-                  "Collaborated on UI/UX feedback and bug fixes",
+                  "Participated in building the mobile ERP used by Ramco Group and external partners",
+                  "Worked in an Agile team (sprints, standups, backlog refinement)",
+                  "Created system diagrams with Lucidchart and architecture models with Enterprise Architect",
+                  "Designed database schemas using dbdiagram.io",
+                  "Used Jira for collaboration and release planning",
+                  "Implemented features in React Native (cross-platform)",
                 ].map((detail, index) => (
                   <motion.li
                     key={index}
@@ -347,7 +348,7 @@ export default function NetworkingSection() {
                   <span className="font-semibold">Skills Gained</span>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Mobile app integration, CI/CD for mobile releases, testing strategies, and deployment monitoring.
+                  React Native cross-platform development, system and architecture modeling, database schema design, Agile collaboration with Jira, and CI/CD for mobile deployments.
                 </p>
               </div>
             </div>
