@@ -41,10 +41,50 @@ function Reveal({ children, className = "", delay = 0 }: { children: React.React
 }
 
 function ProjectCard({ project, index }: { project: (typeof projects)[number]; index: number }) {
-  return <Reveal delay={(index % 3) * 0.06}><motion.article whileHover={{ y: -6, scale: 1.015 }} transition={{ type: "spring", stiffness: 280, damping: 22 }} className="group h-full overflow-hidden rounded-2xl border border-cyan-300/10 bg-[#07182a] shadow-lg shadow-cyan-950/10 transition-colors hover:border-cyan-300/35">
-    <div className="relative aspect-[16/9] overflow-hidden bg-[#04101f]"><Image src={project.image} alt={project.alt} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover transition-transform duration-700 group-hover:scale-110"/><div className="absolute inset-0 bg-gradient-to-t from-[#061425] via-transparent to-black/10"/><span className="absolute left-4 top-4 rounded-full border border-cyan-300/20 bg-[#04101f]/85 px-3 py-1.5 font-mono text-[10px] text-cyan-200">{project.type}</span></div>
-    <div className="flex h-[calc(100%-auto)] flex-col p-5"><h4 className="text-xl font-bold text-slate-50">{project.name}</h4><ul className="mt-3 flex flex-1 list-disc flex-col gap-1.5 pl-4 text-sm leading-6 text-slate-400 marker:text-cyan-400">{project.points.map(point => <li key={point}>{point}</li>)}</ul><p className="mt-4 border-t border-white/10 pt-4 font-mono text-[11px] leading-5 text-cyan-200/80">{project.stack}</p>{project.links.length > 0 && <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2">{project.links.map(([label, href]) => <a key={label} href={href} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-xs font-semibold text-cyan-300 hover:text-white">{label}<ArrowUpRight aria-hidden="true" className="size-3.5"/></a>)}</div>}</div>
-  </motion.article></Reveal>;
+  return (
+    <Reveal delay={(index % 3) * 0.06}>
+      <motion.article
+        whileHover={{ y: -5, scale: 1.01 }}
+        transition={{ type: "spring", stiffness: 280, damping: 24 }}
+        className="group h-full overflow-hidden rounded-[1.4rem] border border-white/10 bg-gradient-to-b from-[#0a1d31] to-[#061426] shadow-xl shadow-black/20 transition-colors hover:border-cyan-300/35"
+      >
+        <div className="p-3 pb-0">
+          <div className="relative aspect-[16/9] overflow-hidden rounded-xl border border-white/10 bg-[#030d1a] shadow-inner shadow-black/40">
+            <div aria-hidden="true" className="pointer-events-none absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-cyan-300/40 to-transparent" />
+            <Image
+              src={project.image}
+              alt={project.alt}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className="object-contain p-2 transition-transform duration-500 group-hover:scale-[1.025]"
+            />
+          </div>
+        </div>
+        <div className="flex h-full flex-col border-t border-white/[.08] px-5 pb-5 pt-4">
+          <span className="mb-2 w-fit rounded-full border border-cyan-300/15 bg-cyan-300/[.06] px-2.5 py-1 font-mono text-[10px] tracking-wide text-cyan-200/90">
+            {project.type}
+          </span>
+          <h4 className="text-xl font-bold leading-snug text-slate-50">{project.name}</h4>
+          <ul className="mt-3 flex list-disc flex-col gap-1.5 pl-4 text-sm leading-6 text-slate-400 marker:text-cyan-400">
+            {project.points.map(point => <li key={point}>{point}</li>)}
+          </ul>
+          <div className="mt-4 rounded-xl border border-white/[.08] bg-[#031020]/70 px-3.5 py-3">
+            <p className="mb-1.5 font-mono text-[9px] uppercase tracking-[.16em] text-slate-500">Technology</p>
+            <p className="font-mono text-[11px] leading-5 text-cyan-100/80">{project.stack}</p>
+          </div>
+          {project.links.length > 0 && (
+            <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 border-t border-white/[.08] pt-3.5">
+              {project.links.map(([label, href]) => (
+                <a key={label} href={href} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-xs font-semibold text-cyan-300 transition hover:text-white">
+                  {label}<ArrowUpRight aria-hidden="true" className="size-3.5" />
+                </a>
+              ))}
+            </div>
+          )}
+        </div>
+      </motion.article>
+    </Reveal>
+  );
 }
 
 export default function PortfolioPage() {
