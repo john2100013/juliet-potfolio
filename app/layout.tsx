@@ -7,8 +7,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'IT Attachment Portfolio | Ramco Group Companies',
-  description: 'Professional IT Internship Portfolio showcasing technical skills, network troubleshooting, preventive maintenance, and IT support experiences at Ramco Group Companies.',
+  title: 'John Mungai | Software Engineer & DevOps Engineer',
+  description: 'Portfolio of John Mungai, Full Stack Software Developer and DevOps Engineer in Nairobi, Kenya. Explore enterprise applications, mobile products, CI/CD and cloud infrastructure work.',
   generator: 'v0.app',
   icons: {
     icon: [
